@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="convert_csv_to_bmp" />
+		<Option pch_mode="2" />
+		<Option compiler="new_gcc_comopiler" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/convert_csv_to_bmp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="new_gcc_comopiler" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/convert_csv_to_bmp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="new_gcc_comopiler" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="D:/API/CV2413_MinGW_5.3.0_i686/CV2413_MinGW_5.3.0_i686/include" />
+			<Add directory="csv_lib/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-static" />
+			<Add option="-static-libgcc" />
+			<Add option="-static-libstdc++" />
+			<Add library="libopencv_videostab2413.a" />
+			<Add library="libopencv_video2413.a" />
+			<Add library="libopencv_ts2413.a" />
+			<Add library="libopencv_superres2413.a" />
+			<Add library="libopencv_stitching2413.a" />
+			<Add library="libopencv_photo2413.a" />
+			<Add library="libopencv_ocl2413.a" />
+			<Add library="libopencv_objdetect2413.a" />
+			<Add library="libopencv_nonfree2413.a" />
+			<Add library="libopencv_ml2413.a" />
+			<Add library="libopencv_legacy2413.a" />
+			<Add library="libopencv_imgproc2413.a" />
+			<Add library="libopencv_highgui2413.a" />
+			<Add library="libopencv_gpu2413.a" />
+			<Add library="libopencv_flann2413.a" />
+			<Add library="libopencv_features2d2413.a" />
+			<Add library="libopencv_core2413.a" />
+			<Add library="libopencv_contrib2413.a" />
+			<Add library="libopencv_calib3d2413.a" />
+			<Add library="liblibtiff.a" />
+			<Add library="liblibpng.a" />
+			<Add library="liblibjasper.a" />
+			<Add library="liblibjpeg.a" />
+			<Add library="libIlmImf.a" />
+			<Add library="libzlib.a" />
+			<Add library="libgdi32.a" />
+			<Add library="libcomdlg32.a" />
+			<Add library="libole32.a" />
+			<Add library="liboleaut32.a" />
+			<Add library="libuuid.a" />
+			<Add library="libvfw32.a" />
+			<Add library="libcsv_dataproc.a" />
+			<Add directory="D:/API/CV2413_MinGW_5.3.0_i686/CV2413_MinGW_5.3.0_i686/x86/mingw/staticlib" />
+			<Add directory="csv_lib/lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
